@@ -1,0 +1,127 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="wallpaperagencia1.css">
+     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        button {
+            padding: 8px 16px;
+            background-color: yellow;
+            color: black;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+      
+    <h2>Cotización de Vuelos y Hoteles</h2>
+    
+    <div class="container">
+        <div>
+            <h3>Vuelos</h3>
+            <form action="cotizacion_vuelos.php" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="origen">Origen:</label></td>
+                        <td>
+                            <select name="origen" id="origen">
+                                <option value="0">...</option>
+                                <option value="bogota">Bogotá, Colombia</option>
+                                <option value="buenosaires">Buenos Aires, Argentina</option>
+                                <option value="santiago">Santiago, Chile</option>
+                                <option value="lima">Lima, Perú</option>
+                                <option value="quito">Quito, Ecuador</option>
+                                <option value="asuncion">Asunción, Paraguay</option>
+                                <option value="brasilia">Brasilia, Brasil</option>
+                                <option value="montevideo">Montevideo, Uruguay</option>
+                                <option value="lapaz">La Paz, Bolivia</option>
+                                <option value="caracas">Caracas, Venezuela</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="destino">Destino:</label></td>
+                        <td>
+                            <select name="destino" id="destino">
+                                <option value="0">...</option>
+                                <option value="bogota">Bogotá, Colombia</option>
+                                <option value="buenosaires">Buenos Aires, Argentina</option>
+                                <option value="santiago">Santiago, Chile</option>
+                                <option value="lima">Lima, Perú</option>
+                                <option value="quito">Quito, Ecuador</option>
+                                <option value="asuncion">Asunción, Paraguay</option>
+                                <option value="brasilia">Brasilia, Brasil</option>
+                                <option value="montevideo">Montevideo, Uruguay</option>
+                                <option value="lapaz">La Paz, Bolivia</option>
+                                <option value="caracas">Caracas, Venezuela</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Obtener Cotización</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div>
+            <h3>Hoteles</h3>
+            <form action="cotizacion_hoteles.php" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="ciudad">Ciudad:</label></td>
+                        <td>
+                            <select name="ciudad" id="ciudad">
+                                <option value="0">...</option>
+                                <option value="bogota">Bogotá, Colombia</option>
+                                <option value="buenosaires">Buenos Aires, Argentina</option>
+                                <option value="santiago">Santiago, Chile</option>
+                                <option value="lima">Lima, Perú</option>
+                                <option value="quito">Quito, Ecuador</option>
+                                <option value="asuncion">Asunción, Paraguay</option>
+                                <option value="brasilia">Brasilia, Brasil</option>
+                                <option value="montevideo">Montevideo, Uruguay</option>
+                                <option value="lapaz">La Paz, Bolivia</option>
+                                <option value="caracas">Caracas, Venezuela</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Obtener Cotización</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
